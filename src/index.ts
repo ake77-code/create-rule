@@ -65,7 +65,7 @@ async function init() {
     editor = 'trae'
   } else {
     editor = await prompts.select({
-      message: "选择你要在什么编辑器下创造rule",
+      message: "你要在什么编辑器下创造rule",
       options: [
         { value: "trae", label: "trae" },
         { value: "cursor", label: "cursor" },
