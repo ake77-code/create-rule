@@ -1,0 +1,41 @@
+{
+  "name": "llm-rules-cli",
+  "version": "0.0.1",
+  "description": "CLI tool to fetch and save Cursor rules from cursor.directory",
+  "type": "module",
+  "bin": {
+    "llm-rules": "index.js"
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cursor",
+    "cursor-editor",
+    "cli",
+    "cursor-rules",
+    "cursor-directory"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.10.1",
+    "cac": "^6.7.14",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "node-fetch": "^3.3.2",
+    "unbuild": "^3.5.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "cross-spawn": "^7.0.6",
+    "mri": "^1.2.0",
+    "picocolors": "^1.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
