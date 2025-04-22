@@ -32,7 +32,6 @@
     "node-fetch": "^3.3.2",
     "unbuild": "^3.5.0"
   },
-  "private": true,
   "devDependencies": {
     "@types/bun": "latest",
     "cross-spawn": "^7.0.6",
