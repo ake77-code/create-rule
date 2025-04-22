@@ -55,4 +55,4 @@ jspm_packages/
 # Local rules directory
 .cursor/
 
-./dist
+dist
