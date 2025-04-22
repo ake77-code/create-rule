@@ -1,79 +1,63 @@
-# Cursor Directory CLI
+# llm-rules-cli
 
-A command-line tool to download and install [Cursor Directory](https://cursor.directory) rules directly to your local Cursor editor.
+## 项目简介
+llm-rules-cli 是一个命令行工具，用于从远程规则库下载并安装规则文件到本地编辑器，支持 Trae、Cursor、Windsurf 主流编辑器，帮助开发者快速集成和管理 LLM 相关规则。
 
-## Installation
+## 安装方法
 
-There are two ways to use this tool:
-
-### Option 1: Use with npx (recommended)
-
-Run directly without installing using npx:
-
+1. 克隆仓库或直接下载：
 ```bash
-npx cursor-directory rules add <slug|url>
+git clone <repo-url>
+cd llm-rules-cli
+```
+2. 安装依赖：
+```bash
+npm install
+```
+3. 构建（可选）：
+```bash
+npm run build
 ```
 
-### Option 2: Install globally
+## 使用说明
 
+### 基本用法
 ```bash
-npm install -g cursor-directory
+npx llm-rules
+# 或
+npm link # 全局安装后
+llm-rules
 ```
 
-Then run with:
+### 命令参数
+- `-t, --template NAME` 指定规则模板名称或 URL
+- `--overwrite` 覆盖已存在的规则文件
+- `-h, --help` 显示帮助信息
 
+### 编辑器规则文件保存路径
+- **Trae**: `.trae/rules/project_rules.md`
+- **Cursor**: `.cursor/rules/<slug>.mdc`
+- **Windsurf**: `.windsurfrules`
+
+规则文件会根据所选编辑器自动保存到对应路径。
+
+### 交互流程
+1. 选择目标编辑器（trae/cursor/windsurf）
+2. 输入或选择规则模板名称（slug 或 URL）
+3. 工具自动下载规则内容并保存到本地指定路径
+
+### 示例
 ```bash
-cursor-directory rules add <slug|url>
+llm-rules trae my-rule-slug
+llm-rules --template https://cursor.directory/api/my-rule-slug
 ```
 
-## Usage
+## 依赖说明
+- Node.js 16+
+- 主要依赖：@clack/prompts、mri、picocolors、node-fetch、fs-extra、unbuild 等
 
-```bash
-# Using npx (without installation)
-npx cursor-directory rules add <slug|url>
-
-# Or if globally installed
-cursor-directory rules add <slug|url>
-```
-
-### Examples
-
-```bash
-# Using npx with a slug
-npx cursor-directory rules add al-buisnesscentral-development-cursor-rules
-
-# Using npx with a URL
-npx cursor-directory rules add https://cursor.directory/front-end-cursor-rules
-
-# Or if installed globally
-cursor-directory rules add al-buisnesscentral-development-cursor-rules
-```
-
-## How It Works
-
-This CLI tool:
-
-1. Fetches the rule directly from `cursor.directory/api/[slug]`
-2. If a URL is provided, extracts the slug from it
-3. Saves the rule to `.cursor/rules/<slug>.mdc` with the proper frontmatter format
-4. Sets up the proper metadata including title, empty globs, and alwaysApply: false
-
-## Available Rules
-
-Visit [cursor.directory](https://cursor.directory) to browse all available rules.
-
-## Features
-
-- Fetches cursor rules directly from the specific API endpoint
-- Supports both direct slugs and full URLs
-- Saves rules in the proper MDC format
-- Creates the necessary directory structure if it doesn't exist
-- Validates the existence of rules before attempting to save
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 贡献指南
+欢迎提交 issue 和 PR，完善规则模板与 CLI 功能。
 
 ## License
-
-MIT 
+MIT

@@ -1,7 +1,7 @@
 {
   "name": "llm-rules-cli",
   "version": "0.0.1",
-  "description": "CLI tool to fetch and save Cursor rules from cursor.directory",
+  "description": "命令行工具，用于下载并安装规则到本地编辑器中。",
   "type": "module",
   "bin": {
     "llm-rules": "index.js"
@@ -14,10 +14,14 @@
   },
   "keywords": [
     "cursor",
-    "cursor-editor",
+    "cursor-directory",
+    "rules",
     "cli",
-    "cursor-rules",
-    "cursor-directory"
+    "trae",
+    "windsurf",
+    "automation",
+    "install",
+    "download"
   ],
   "license": "MIT",
   "dependencies": {
