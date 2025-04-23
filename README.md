@@ -1,63 +1,65 @@
+[中文版说明](./README.zh.md)
+
 # llm-rules-cli
 
-## 项目简介
-llm-rules-cli 是一个命令行工具，用于从远程规则库下载并安装规则文件到本地编辑器，支持 Trae、Cursor、Windsurf 主流编辑器，帮助开发者快速集成和管理 LLM 相关规则。
+## Project Overview
+llm-rules-cli is a command-line tool for downloading and installing rule files from a remote rule repository to your local editor. It supports mainstream editors such as Trae, Cursor, and Windsurf, helping developers quickly integrate and manage LLM-related rules.
 
-## 安装方法
+## Installation
 
-1. 克隆仓库或直接下载：
+1. Clone the repository or download directly:
 ```bash
 git clone <repo-url>
 cd llm-rules-cli
 ```
-2. 安装依赖：
+2. Install dependencies:
 ```bash
 npm install
 ```
-3. 构建（可选）：
+3. Build (optional):
 ```bash
 npm run build
 ```
 
-## 使用说明
+## Usage
 
-### 基本用法
+### Basic Usage
 ```bash
 npx llm-rules
-# 或
-npm link # 全局安装后
+# Or
+npm link # After global installation
 llm-rules
 ```
 
-### 命令参数
-- `-t, --template NAME` 指定规则模板名称或 URL
-- `--overwrite` 覆盖已存在的规则文件
-- `-h, --help` 显示帮助信息
+### Command Options
+- `-t, --template NAME` Specify the rule template name or URL
+- `--overwrite` Overwrite existing rule files
+- `-h, --help` Show help information
 
-### 编辑器规则文件保存路径
+### Editor Rule File Save Paths
 - **Trae**: `.trae/rules/project_rules.md`
 - **Cursor**: `.cursor/rules/<slug>.mdc`
 - **Windsurf**: `.windsurfrules`
 
-规则文件会根据所选编辑器自动保存到对应路径。
+The rule file will be automatically saved to the corresponding path based on the selected editor.
 
-### 交互流程
-1. 选择目标编辑器（trae/cursor/windsurf）
-2. 输入或选择规则模板名称（slug 或 URL）
-3. 工具自动下载规则内容并保存到本地指定路径
+### Interactive Flow
+1. Select the target editor (trae/cursor/windsurf)
+2. Enter or select the rule template name (slug or URL)
+3. The tool automatically downloads the rule content and saves it to the specified local path
 
-### 示例
+### Example
 ```bash
 llm-rules trae my-rule-slug
 llm-rules --template https://cursor.directory/api/my-rule-slug
 ```
 
-## 依赖说明
+## Dependencies
 - Node.js 16+
-- 主要依赖：@clack/prompts、mri、picocolors、node-fetch、fs-extra、unbuild 等
+- Main dependencies: @clack/prompts, mri, picocolors, node-fetch, fs-extra, unbuild, etc.
 
-## 贡献指南
-欢迎提交 issue 和 PR，完善规则模板与 CLI 功能。
+## Contribution Guide
+Contributions are welcome! Please submit issues and PRs to improve rule templates and CLI features.
 
 ## License
 MIT
