@@ -1,3 +1,7 @@
+[GitHub 仓库地址](https://github.com/your-username/create-rule)
+
+[English Version Documentation](https://github.com/ake77-code/create-rule/blob/main/README.md)
+
 # create-rule
 
 ## 项目简介

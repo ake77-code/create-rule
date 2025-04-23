@@ -40,5 +40,13 @@
   },
   "peerDependencies": {
     "typescript": "^5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ake77-code/create-rule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ake77-code/create-rule/issues"
+  },
+  "homepage": "https://github.com/ake77-code/create-rule#readme"
 }
