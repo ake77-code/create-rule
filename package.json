@@ -1,6 +1,6 @@
 {
   "name": "create-rule",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "命令行工具，用于下载并安装规则到本地编辑器中。",
   "type": "module",
   "bin": {
