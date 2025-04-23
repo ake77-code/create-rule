@@ -1,10 +1,10 @@
 {
-  "name": "llm-rules-cli",
+  "name": "create-rules",
   "version": "0.0.1",
   "description": "命令行工具，用于下载并安装规则到本地编辑器中。",
   "type": "module",
   "bin": {
-    "llm-rules": "index.js"
+    "create-rules": "index.js"
   },
   "scripts": {
     "dev": "unbuild --stub",
