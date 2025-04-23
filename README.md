@@ -1,4 +1,4 @@
-[GitHub 仓库地址](https://github.com/ake77-code/create-rule)
+[GitHub](https://github.com/ake77-code/create-rule)
 
 [中文版说明](https://github.com/ake77-code/create-rule/blob/main/README.zh.md)
 

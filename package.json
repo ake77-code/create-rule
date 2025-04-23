@@ -1,7 +1,7 @@
 {
   "name": "create-rule",
-  "version": "0.0.4",
-  "description": "命令行工具，用于下载并安装规则到本地编辑器中。",
+  "version": "0.0.5",
+  "description": "A command-line tool for downloading and installing rules into the local editor.",
   "type": "module",
   "bin": {
     "create-rule": "index.js"
