@@ -5,15 +5,15 @@ import colors from "picocolors";
 import { writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs"
 const {
-  blue,
-  blueBright,
+  // blue,
+  // blueBright,
   cyan,
   green,
-  greenBright,
-  magenta,
-  red,
-  redBright,
-  reset,
+  // greenBright,
+  // magenta,
+  // red,
+  // redBright,
+  // reset,
   yellow,
 } = colors;
 
