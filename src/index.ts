@@ -32,7 +32,7 @@ const RULES_API_BASE_URL = 'https://cursor.directory/api'
 
 // prettier-ignore
 const helpMessage = `\
-Usage: llm-rules [OPTION]... [DIRECTORY]
+Usage: create-rule [OPTION]... [DIRECTORY]
 
 创建一个新的 LLM Rules 配置文件。
 无参数时，以交互模式启动 CLI。

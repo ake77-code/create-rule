@@ -7,6 +7,8 @@
 ## 项目简介
 create-rule 是一款为开发者设计的命令行工具，可高效下载并集成 LLM 相关规则到主流本地编辑器（Trae、Cursor、Windsurf），简化规则管理，提升 AI 项目工作流效率。
 
+**规则来源**：当前所有规则内容均来源于 [https://cursor.directory/rules](https://cursor.directory/rules)
+
 ## 功能说明
 | 模块               | 描述                                                         |
 |--------------------|--------------------------------------------------------------|
@@ -41,7 +43,7 @@ npx create-rule
 - 全局安装后运行：
 ```bash
 npm link
-llm-rules
+create-rule
 ```
 
 ### 常用命令选项
@@ -65,8 +67,8 @@ llm-rules
 
 ### 示例
 ```bash
-llm-rules trae my-rule-slug
-llm-rules --template https://cursor.directory/api/my-rule-slug
+create-rule trae my-rule-slug
+create-rule --template https://cursor.directory/api/my-rule-slug
 ```
 
 ## 常见问题与注意事项
@@ -92,7 +94,6 @@ llm-rules --template https://cursor.directory/api/my-rule-slug
 
 ## 联系与支持信息
 - 问题与建议请通过 GitHub Issues 提交
-- 邮箱支持：support@example.com
 - 更多信息请访问项目主页或文档中心
 
 ## 许可证
